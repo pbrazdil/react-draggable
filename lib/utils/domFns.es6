@@ -103,7 +103,7 @@ export function innerWidth(node: HTMLElement): number {
 
 export function createCSSTransform({x, y}: {x: number, y: number}): Object {
   // Replace unitless items with px
-  let out = {transform: 'translate(' + x + 'px,' + y + 'px)'};
+  let out = {transform: 'translate3d(' + x + 'px,' + y + 'px, 0)'};
   // Add single prefixed property as well
   if (browserPrefix) {
     out[browserPrefix + 'Transform'] = out.transform;
