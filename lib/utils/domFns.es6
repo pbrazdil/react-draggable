@@ -112,7 +112,7 @@ export function createCSSTransform({x, y}: {x: number, y: number}): Object {
 }
 
 export function createSVGTransform({x, y}: {x: number, y: number}): string {
-  return 'translate(' + x + ',' + y + ')';
+  return 'translate3d(' + x + ',' + y + ', 0)';
 }
 
 // User-select Hacks:
